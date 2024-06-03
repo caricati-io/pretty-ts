@@ -1,4 +1,4 @@
-# Caricati Eslint Config
+# Caricati: TS Eslint Config
 
 ## install
 
@@ -12,6 +12,18 @@ Create the `.eslintrc` file on the root path of your project, and add the `@cari
 
 ```
 {
-  "extends": "@caricati/ts-eslint-config"
+  "extends": "@caricati/ts-eslint-config",
+  "settings": {
+    "import/resolver": {
+      node: {
+        paths: ["src"],
+        extensions: [".js", ".ts"],
+      },
+    },
+  },
+  "parserOptions": {
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+  },
 }
 ```
