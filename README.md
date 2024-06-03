@@ -2,7 +2,7 @@
 
 Presets of the Eslint and Prettier
 
-[eslint-config-react](packages/eslint-config-react/README.md)
+[eslint-config](packages/eslint-config/README.md)
 •
 [prettier-config](packages/prettier-config/README.md)
 
