@@ -1,0 +1,12 @@
+{
+  "name": "@caricati/pretty-ts",
+  "version": "1.0.0",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "publish-all": "npm run publish-eslint-config && npm run publish-prettier-config",
+    "publish-eslint-config": "npm publish --workspace @caricati/ts-eslint-config",
+    "publish-prettier-config": "npm publish --workspace @caricati/ts-prettier-config"
+  }
+}
